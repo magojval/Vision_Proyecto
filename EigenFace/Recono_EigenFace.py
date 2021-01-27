@@ -13,13 +13,13 @@ from eigenfaces import Eigenface_test_ima
 from eigenfaces import get_images
 
 
-dataPath = 'D:/jorge/Documents/Maestria/1 Semestre/Vision computacion/Facial/Data' #Cambia a la ruta donde hayas almacenado Data
+dataPath = 'D:/jorge/Documents/Maestria/1 Semestre/Vision computacion/EntrenamientoYO' #Cambia a la ruta donde hayas almacenado Data
 imagePaths = os.listdir(dataPath)
 print('imagePaths=',imagePaths)
 
-path_Entr='D:/jorge/Documents/Maestria/1 Semestre/Vision computacion/FaceDetection-master/Data'
+path_Entr='D:/jorge/Documents/Maestria/1 Semestre/Vision computacion/EntrenamientoYO'
 
-print("Entrenando")
+print("Entrenando....")
 inicio = time.time()
 labels_train,weights,kbest, mean= Valores_Eigenface(path_Entr)
 print("Fin del entrenamiento")
